@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{DF0DDF76-BE06-49D5-8763-09FD2269841E}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{8A47F3EF-8F91-4CD3-93B4-B9F344BFC72F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -326,7 +326,7 @@
       DTS:ObjectName="DESKTOP-HLEP1R6.db_spa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Initial Catalog=db_spa;Integrated Security=True;Trust Server Certificate=True;Application Name=SSIS-Package-{1E85CF8B-AC49-4A78-9270-3B6DE8E137C1}DESKTOP-HLEP1R6.db_spa;" />
+          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Initial Catalog=db_spa;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{1E85CF8B-AC49-4A78-9270-3B6DE8E137C1}DESKTOP-HLEP1R6.db_spa;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -338,7 +338,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{FD427EC8-4C1F-46EB-9C5D-FC1C46ABC97E}localhost;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -676,6 +676,228 @@
               </outputs>
             </component>
             <component
+              refId="Package\Carga de informacion\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga de informacion\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Output].Columns[Sucursal]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="6"
+                      lineageId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Output].Columns[Sucursal]"
+                      name="Sucursal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"CENTRO"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"CENTRO"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de informacion\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga de informacion\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Output].Columns[Sucursal]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="7"
+                      lineageId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Output].Columns[Sucursal]"
+                      name="Sucursal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"ESCALON"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"ESCALON"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga de informacion\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga de informacion\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Output].Columns[Sucursal]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="11"
+                      lineageId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Output].Columns[Sucursal]"
+                      name="Sucursal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"SANTA TECLA"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"SANTA TECLA"</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Carga de informacion\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Carga de informacion\Destino de ADO NET"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
@@ -689,7 +911,7 @@
                   description="Nombre de la tabla de la base de datos de destino."
                   expressionType="Notify"
                   name="TableOrViewName"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Spa"</property>
                 <property
                   dataType="System.Int32"
                   description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
@@ -712,6 +934,8 @@
               <connections>
                 <connection
                   refId="Package\Carga de informacion\Destino de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_spa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_spa]"
                   description="Administrador de conexiones administrado"
                   name="IDbConnection" />
               </connections>
@@ -721,8 +945,144 @@
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sexo"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sexo]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sexo]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[ingresos]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ingresos"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[ingresos]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[ingresos]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[PromVisit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PromVisit"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[PromVisit]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[PromVisit]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Edad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Edad"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Edad]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Edad]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Sauna]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sauna"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sauna]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sauna]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Masaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Masaje"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Masaje]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Masaje]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Hidro]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hidro"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Hidro]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Hidro]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Yoga]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Yoga"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Yoga]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[Sucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="11"
+                      cachedName="Sucursal"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sucursal]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]" />
+                    <inputColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[cliente]"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[id]" />
+                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[cliente]"
+                      dataType="wstr"
+                      length="50"
+                      name="cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sexo]"
+                      dataType="wstr"
+                      length="50"
+                      name="Sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[ingresos]"
+                      dataType="wstr"
+                      length="50"
+                      name="ingresos" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[PromVisit]"
+                      dataType="wstr"
+                      length="50"
+                      name="PromVisit" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Edad]"
+                      dataType="wstr"
+                      length="50"
+                      name="Edad" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sauna]"
+                      dataType="wstr"
+                      length="50"
+                      name="Sauna" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Masaje]"
+                      dataType="wstr"
+                      length="50"
+                      name="Masaje" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Hidro]"
+                      dataType="wstr"
+                      length="50"
+                      name="Hidro" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Yoga]"
+                      dataType="wstr"
+                      length="50"
+                      name="Yoga" />
+                    <externalMetadataColumn
+                      refId="Package\Carga de informacion\Destino de ADO NET.Inputs[Entrada de destino de ADO NET].ExternalColumns[Sucursal]"
+                      dataType="wstr"
+                      length="50"
+                      name="Sucursal" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
@@ -1393,11 +1753,12 @@
               version="1">
               <inputs>
                 <input
-                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1]"
-                  name="Union All Input 1">
+                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4]"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[id]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1412,7 +1773,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Sexo]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Sexo]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1427,7 +1788,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[ingresos]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[ingresos]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1442,7 +1803,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[PromVisit]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[PromVisit]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1457,7 +1818,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Edad]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Edad]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1472,7 +1833,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Sauna]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Sauna]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1487,7 +1848,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Masaje]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Masaje]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1502,7 +1863,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Hidro]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Hidro]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1517,7 +1878,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Yoga]"
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Yoga]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -1529,6 +1890,177 @@
                           dataType="System.Int32"
                           description="Output column lineage ID"
                           name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4].Columns[Sucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="Sucursal"
+                      lineageId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Output].Columns[Sucursal]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1]"
+                  hasSideEffects="true"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="id"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Sexo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sexo"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Sexo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sexo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[ingresos]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ingresos"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[ingresos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[ingresos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[PromVisit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PromVisit"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[PromVisit]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[PromVisit]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Edad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Edad"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Edad]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Edad]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Sauna]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sauna"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Sauna]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sauna]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Masaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Masaje"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Masaje]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Masaje]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Hidro]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Hidro"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Hidro]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Hidro]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Yoga]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Yoga"
+                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Yoga]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 1].Columns[Sucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="Sucursal"
+                      lineageId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Output].Columns[Sucursal]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -1545,7 +2077,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="id"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[id]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[id]">
                       <properties>
                         <property
                           containsID="true"
@@ -1560,7 +2092,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Sexo"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Sexo]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Sexo]">
                       <properties>
                         <property
                           containsID="true"
@@ -1575,7 +2107,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ingresos"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[ingresos]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[ingresos]">
                       <properties>
                         <property
                           containsID="true"
@@ -1590,7 +2122,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PromVisit"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[PromVisit]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[PromVisit]">
                       <properties>
                         <property
                           containsID="true"
@@ -1605,7 +2137,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Edad"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Edad]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Edad]">
                       <properties>
                         <property
                           containsID="true"
@@ -1620,7 +2152,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Sauna"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Sauna]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Sauna]">
                       <properties>
                         <property
                           containsID="true"
@@ -1635,7 +2167,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Masaje"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Masaje]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Masaje]">
                       <properties>
                         <property
                           containsID="true"
@@ -1650,7 +2182,7 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Hidro"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Hidro]">
+                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Hidro]">
                       <properties>
                         <property
                           containsID="true"
@@ -1665,149 +2197,6 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Yoga"
-                      lineageId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output].Columns[Yoga]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3]"
-                  hasSideEffects="true"
-                  name="Union All Input 3">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="id"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[id]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[id]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Sexo]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Sexo"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Sexo]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sexo]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[ingresos]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ingresos"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[ingresos]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[ingresos]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[PromVisit]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="PromVisit"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[PromVisit]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[PromVisit]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Edad]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Edad"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Edad]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Edad]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Sauna]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Sauna"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Sauna]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sauna]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Masaje]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Masaje"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Masaje]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Masaje]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Hidro]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Hidro"
-                      lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Hidro]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Hidro]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3].Columns[Yoga]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Yoga"
                       lineageId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output].Columns[Yoga]">
                       <properties>
                         <property
@@ -1817,14 +2206,28 @@
                           name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Carga de informacion\Union All.Inputs[Union All Input 2].Columns[Sucursal]"
+                      cachedDataType="wstr"
+                      cachedLength="11"
+                      cachedName="Sucursal"
+                      lineageId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Output].Columns[Sucursal]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 4]"
+                  refId="Package\Carga de informacion\Union All.Inputs[Union All Input 3]"
                   dangling="true"
                   hasSideEffects="true"
-                  name="Union All Input 4">
+                  name="Union All Input 3">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -1896,6 +2299,12 @@
                       length="50"
                       lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Yoga]"
                       name="Yoga" />
+                    <outputColumn
+                      refId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]"
+                      dataType="wstr"
+                      length="11"
+                      lineageId="Package\Carga de informacion\Union All.Outputs[Union All Output 1].Columns[Sucursal]"
+                      name="Sucursal" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1904,18 +2313,33 @@
           </components>
           <paths>
             <path
-              refId="Package\Carga de informacion.Paths[Flat File Source Output]"
+              refId="Package\Carga de informacion.Paths[Derived Column Output]"
+              endId="Package\Carga de informacion\Union All.Inputs[Union All Input 4]"
+              name="Derived Column Output"
+              startId="Package\Carga de informacion\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Carga de informacion.Paths[Derived Column Output1]"
               endId="Package\Carga de informacion\Union All.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Carga de informacion\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Carga de informacion.Paths[Derived Column Output2]"
+              endId="Package\Carga de informacion\Union All.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Carga de informacion\Derived Column 2.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Carga de informacion.Paths[Flat File Source Output]"
+              endId="Package\Carga de informacion\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Carga de informacion\Centro.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Carga de informacion.Paths[Flat File Source Output1]"
-              endId="Package\Carga de informacion\Union All.Inputs[Union All Input 2]"
+              endId="Package\Carga de informacion\Derived Column 1.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Carga de informacion\Escalon.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Carga de informacion.Paths[Flat File Source Output2]"
-              endId="Package\Carga de informacion\Union All.Inputs[Union All Input 3]"
+              endId="Package\Carga de informacion\Derived Column 2.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Carga de informacion\Santa Tecla.Outputs[Flat File Source Output]" />
             <path
@@ -1927,7 +2351,34 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{1FEE08C3-14F3-44EF-B409-83E74D5E5584}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD427EC8-4C1F-46EB-9C5D-FC1C46ABC97E}"
+          SQLTask:SqlStatementSource="USE [db_spa]&#xA;GO&#xA;&#xA;EXEC  [dbo].[sp_calcular_segmento]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{4E333853-27B2-4FE8-A8A4-131AFAB369BB}"
+      DTS:From="Package\Carga de informacion"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Tarea Ejecutar SQL" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
 <!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
@@ -1939,11 +2390,37 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Carga de informacion"
-          TopLeft="5.5,5.5" />
+          TopLeft="410.500000862139,87.3235293400432" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="420.00000089407,178.176470432057" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="502.450000878104,128.923529340043">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.2529410920135"
+              Start="0,0"
+              End="0,41.7529410920135">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.7529410920135" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1953,9 +2430,13 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="109.6,41.6"
+          Id="Package\Carga de informacion\Centro"
+          TopLeft="130.000000276736,59.6470587712465" />
+        <NodeLayout
           Size="120,41.6"
           Id="Package\Carga de informacion\Union All"
-          TopLeft="298.571429207009,197.294117474123" />
+          TopLeft="282.142857743465,295.176470329502" />
         <NodeLayout
           Size="113.6,41.6"
           Id="Package\Carga de informacion\Escalon"
@@ -1965,35 +2446,23 @@
           Id="Package\Carga de informacion\Santa Tecla"
           TopLeft="506.428572506625,61.9411764162944" />
         <NodeLayout
-          Size="109.6,41.6"
-          Id="Package\Carga de informacion\Centro"
-          TopLeft="130.000000276736,59.6470587712465" />
+          Size="152.8,41.6"
+          Id="Package\Carga de informacion\Derived Column"
+          TopLeft="108.571428802549,163.235294049947" />
         <EdgeLayout
-          Id="Package\Carga de informacion.Paths[Flat File Source Output2]"
-          TopLeft="572.828572506625,103.541176416294">
+          Id="Package\Carga de informacion.Paths[Flat File Source Output]"
+          TopLeft="184.885714539642,101.247058771247">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-186.257143299616,93.7529410578286"
+              EndConnector="0,61.9882352787008"
               Start="0,0"
-              End="-186.257143299616,86.2529410578286">
+              End="0,54.4882352787008">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,57.1432224290186" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,57.1432224290186"
-                    Point2="0,61.1432224290186"
-                    Point3="-4,61.1432224290186" />
-                  <mssgle:LineSegment
-                    End="-182.257143299616,61.1432224290186" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-182.257143299616,61.1432224290186"
-                    Point2="-186.257143299616,61.1432224290186"
-                    Point3="-186.257143299616,65.1432224290186" />
-                  <mssgle:LineSegment
-                    End="-186.257143299616,86.2529410578286" />
+                    End="0,54.4882352787008" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2002,32 +2471,108 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de informacion.Paths[Derived Column Output]"
+          TopLeft="184.971428802549,204.835294049947">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="129.171428940917,90.3411762795544"
+              Start="0,0"
+              End="129.171428940917,82.8411762795544">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.9181584431877" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.9181584431877"
+                    Point2="0,58.9181584431877"
+                    Point3="4,58.9181584431877" />
+                  <mssgle:LineSegment
+                    End="125.171428940917,58.9181584431877" />
+                  <mssgle:CubicBezierSegment
+                    Point1="125.171428940917,58.9181584431877"
+                    Point2="129.171428940917,58.9181584431877"
+                    Point3="129.171428940917,62.9181584431877" />
+                  <mssgle:LineSegment
+                    End="129.171428940917,82.8411762795544" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga de informacion\Derived Column 1"
+          TopLeft="320.714286397002,163.19999986326" />
         <EdgeLayout
           Id="Package\Carga de informacion.Paths[Flat File Source Output1]"
           TopLeft="369.657143523134,98.9529411261985">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.0857143161248,98.3411763479245"
+              EndConnector="32.2571428738682,64.2470587370614"
               Start="0,0"
-              End="-11.0857143161248,90.8411763479245">
+              End="32.2571428738682,56.7470587370614">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.1705881739622" />
+                    End="0,28.1235293685307" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,45.1705881739622"
-                    Point2="0,49.1705881739622"
-                    Point3="-4,49.1705881739622" />
+                    Point1="0,28.1235293685307"
+                    Point2="0,32.1235293685307"
+                    Point3="4,32.1235293685307" />
                   <mssgle:LineSegment
-                    End="-7.08571431612484,49.1705881739622" />
+                    End="28.2571428738682,32.1235293685307" />
                   <mssgle:CubicBezierSegment
-                    Point1="-7.08571431612484,49.1705881739622"
-                    Point2="-11.0857143161248,49.1705881739622"
-                    Point3="-11.0857143161248,53.1705881739622" />
+                    Point1="28.2571428738682,32.1235293685307"
+                    Point2="32.2571428738682,32.1235293685307"
+                    Point3="32.2571428738682,36.1235293685307" />
                   <mssgle:LineSegment
-                    End="-11.0857143161248,90.8411763479245" />
+                    End="32.2571428738682,56.7470587370614" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Carga de informacion\Derived Column 2"
+          TopLeft="550.000001170806,160.141176336529" />
+        <EdgeLayout
+          Id="Package\Carga de informacion.Paths[Flat File Source Output2]"
+          TopLeft="572.828572506625,103.541176416294">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.3714286641808,56.599999920235"
+              Start="0,0"
+              End="58.3714286641808,49.099999920235">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.2999999601175" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.2999999601175"
+                    Point2="0,28.2999999601175"
+                    Point3="4,28.2999999601175" />
+                  <mssgle:LineSegment
+                    End="54.3714286641808,28.2999999601175" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54.3714286641808,28.2999999601175"
+                    Point2="58.3714286641808,28.2999999601175"
+                    Point3="58.3714286641808,32.2999999601175" />
+                  <mssgle:LineSegment
+                    End="58.3714286641808,49.099999920235" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2037,31 +2582,65 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Carga de informacion.Paths[Flat File Source Output]"
-          TopLeft="184.800000276736,101.247058771247">
+          Id="Package\Carga de informacion.Paths[Derived Column Output1]"
+          TopLeft="401.914286397002,204.79999986326">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="145.771428930273,96.0470587028765"
+              EndConnector="-51.819047723964,90.3764704662418"
               Start="0,0"
-              End="145.771428930273,88.5470587028765">
+              End="-51.819047723964,82.8764704662418">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.6393861105716" />
+                    End="0,49.5123838286958" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,58.6393861105716"
-                    Point2="0,62.6393861105716"
-                    Point3="4,62.6393861105716" />
+                    Point1="0,49.5123838286958"
+                    Point2="0,53.5123838286958"
+                    Point3="-4,53.5123838286958" />
                   <mssgle:LineSegment
-                    End="141.771428930273,62.6393861105716" />
+                    End="-47.819047723964,53.5123838286958" />
                   <mssgle:CubicBezierSegment
-                    Point1="141.771428930273,62.6393861105716"
-                    Point2="145.771428930273,62.6393861105716"
-                    Point3="145.771428930273,66.6393861105716" />
+                    Point1="-47.819047723964,53.5123838286958"
+                    Point2="-51.819047723964,53.5123838286958"
+                    Point3="-51.819047723964,57.5123838286958" />
                   <mssgle:LineSegment
-                    End="145.771428930273,88.5470587028765" />
+                    End="-51.819047723964,82.8764704662418" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga de informacion.Paths[Derived Column Output2]"
+          TopLeft="631.200001170806,201.741176336529">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-261.057143427341,93.4352939929723"
+              Start="0,0"
+              End="-261.057143427341,85.9352939929723">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.9360612997646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.9360612997646"
+                    Point2="0,60.9360612997646"
+                    Point3="-4,60.9360612997646" />
+                  <mssgle:LineSegment
+                    End="-257.057143427341,60.9360612997646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-257.057143427341,60.9360612997646"
+                    Point2="-261.057143427341,60.9360612997646"
+                    Point3="-261.057143427341,64.9360612997646" />
+                  <mssgle:LineSegment
+                    End="-261.057143427341,85.9352939929723" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2073,21 +2652,21 @@
         <NodeLayout
           Size="176,41.6"
           Id="Package\Carga de informacion\Destino de ADO NET"
-          TopLeft="264.285714848309,280.894117405753" />
+          TopLeft="256.42857197444,376.611764550374" />
         <EdgeLayout
           Id="Package\Carga de informacion.Paths[Union All Output 1]"
-          TopLeft="355.428572027659,238.894117474123">
+          TopLeft="343.285714858953,336.776470329502">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.9999999316299"
+              EndConnector="0,39.8352942208725"
               Start="0,0"
-              End="0,34.4999999316299">
+              End="0,32.3352942208725">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.4999999316299" />
+                    End="0,32.3352942208725" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
