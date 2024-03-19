@@ -7,6 +7,8 @@ Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DiegoSpa", "DiegoSpa\DiegoS
 EndProject
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "FloristeriaFiorella", "FloristeriaFiorella\FloristeriaFiorella.dtproj", "{615F88AC-29B9-4F87-9BB2-DB09AA3855DD}"
 EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "FioDio", "FioDio\FioDio.dtproj", "{FCBE0815-E3D7-48A5-BC68-E2C4875FC61C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -16,6 +18,8 @@ Global
 		{A26E5543-34CD-42C2-97FA-7875693F960A}.Development|Default.Build.0 = Development
 		{615F88AC-29B9-4F87-9BB2-DB09AA3855DD}.Development|Default.ActiveCfg = Development
 		{615F88AC-29B9-4F87-9BB2-DB09AA3855DD}.Development|Default.Build.0 = Development
+		{FCBE0815-E3D7-48A5-BC68-E2C4875FC61C}.Development|Default.ActiveCfg = Development
+		{FCBE0815-E3D7-48A5-BC68-E2C4875FC61C}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
