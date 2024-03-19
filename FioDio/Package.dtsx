@@ -11,10 +11,96 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{19689866-270E-4855-A8B7-7EDD5EDADB66}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{4BD66E09-C7D9-4BC1-92CD-6B4765181827}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{0654D87E-E5DA-4359-B3DA-DE4C2594DAF7}"
+      DTS:ObjectName=".root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="user id=root;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7C5E2A05-FBCC-4C24-A632-9BD5C947D88C}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ROG STRIX\Documents\UDB\ING SISTEMAS\Ciclo 1\DMD\Desafio 1\DiegoSpa\FioDio\Preferencial y Ejecutivo.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{4CC3C8E6-10E0-4CA9-BC84-B1B5414C60FB}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\ROG STRIX\Documents\UDB\ING SISTEMAS\Ciclo 1\DMD\Desafio 1\DiegoSpa\FioDio\Gobierno y Turista.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_roaming_honduras]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{77B4C35A-1DEE-4CB5-9EEA-007206AAC5F6}"
+      DTS:ObjectName="DESKTOP-HLEP1R6.db_roaming_honduras">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Initial Catalog=db_roaming_honduras;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{77B4C35A-1DEE-4CB5-9EEA-007206AAC5F6}DESKTOP-HLEP1R6.db_roaming_honduras;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_roaming_honduras 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{45DFD80A-128A-413C-8448-6FF8BD30D2DC}"
+      DTS:ObjectName="DESKTOP-HLEP1R6.db_roaming_honduras 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Initial Catalog=db_roaming_honduras;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{45DFD80A-128A-413C-8448-6FF8BD30D2DC}DESKTOP-HLEP1R6.db_roaming_honduras 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_roaming_honduras 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{D01C5E96-B6AF-431C-81F0-79939E6C04CD}"
+      DTS:ObjectName="DESKTOP-HLEP1R6.db_roaming_honduras 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-HLEP1R6;Initial Catalog=db_roaming_honduras;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{D01C5E96-B6AF-431C-81F0-79939E6C04CD}DESKTOP-HLEP1R6.db_roaming_honduras 2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.db_roaming_costarica.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{E8D7B267-422A-436C-B95F-68C611159C8D}"
+      DTS:ObjectName="localhost.db_roaming_costarica.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;database=db_roaming_costarica;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.root]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{0EE70E5D-A862-43AD-81DF-ED02F89A995F}"
+      DTS:ObjectName="localhost.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -29,7 +115,1770 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
-          version="1" />
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input].Columns[nombre_tipo]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Preferencial y Ejecutivo]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Preferencial y Ejecutivo"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]} == "CLIENTE PREFERENCIAL" || #{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]} == "CLIENTE EJECUTIVO"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">nombre_tipo == "CLIENTE PREFERENCIAL" || nombre_tipo == "CLIENTE EJECUTIVO"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Gobierno y Turista]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Gobierno y Turista"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]} == "CLIENTE TURISTA" || #{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]} == "CLIENTE GUBERNAMENTAL"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">nombre_tipo == "CLIENTE TURISTA" || nombre_tipo == "CLIENTE GUBERNAMENTAL"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[default]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="default"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[codigo_cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[codigo_pais]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="2"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[codigo_pais]"
+                      name="codigo_pais"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[LEFT](#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]},2)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">LEFT(codigo_cliente,2)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Gobierno y Turista"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Gobierno y Turista"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Gobierno_y_Turista</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Gobierno y Turista.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[codigo_cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[codigo_cliente]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[dui]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="dui"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[dui]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[nit]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="nit"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nit]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[apellidos]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="apellidos"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[apellidos]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[nombres]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="nombres"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nombres]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[sexo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="sexo"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[sexo]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[numero_telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="numero_telefono"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[numero_telefono]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[estado]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="estado"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[estado]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[nombre_tipo]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nombre_tipo]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].Columns[codigo_pais]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="codigo_pais"
+                      externalMetadataColumnId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[codigo_pais]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[codigo_pais]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[id]"
+                      dataType="wstr"
+                      length="255"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[monto_facturacion]"
+                      dataType="wstr"
+                      length="255"
+                      name="monto_facturacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[idtipocliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[codigo_cliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[dui]"
+                      dataType="wstr"
+                      length="255"
+                      name="dui" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nit]"
+                      dataType="wstr"
+                      length="255"
+                      name="nit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[apellidos]"
+                      dataType="wstr"
+                      length="255"
+                      name="apellidos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nombres]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombres" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="255"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[numero_telefono]"
+                      dataType="wstr"
+                      length="255"
+                      name="numero_telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="255"
+                      name="estado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[nombre_tipo]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre_tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input].ExternalColumns[codigo_pais]"
+                      dataType="wstr"
+                      length="255"
+                      name="codigo_pais" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Gobierno y Turista.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Gobierno y Turista.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Gobierno y Turista.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Gobierno y Turista.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Origen de ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT a.idcliente, a.monto_facturacion, b.idtipocliente, b.codigo_cliente, b.dui, b.nit, b.apellidos, b.nombres, b.sexo, b.numero_telefono, b.estado, c.nombre_tipo
+FROM     facturacion AS a LEFT OUTER JOIN
+                  cliente AS b ON a.idcliente = b.idcliente LEFT OUTER JOIN
+                  tipo_clientes AS c ON b.idtipocliente = c.idtipocliente</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Origen de ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_roaming_honduras]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-HLEP1R6.db_roaming_honduras]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[idcliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[idcliente]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[idcliente]"
+                      name="idcliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[idtipocliente]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[idtipocliente]"
+                      name="idtipocliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[codigo_cliente]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]"
+                      name="codigo_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[dui]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[dui]"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[dui]"
+                      name="dui"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nit]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nit]"
+                      length="14"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nit]"
+                      name="nit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellidos]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[apellidos]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellidos]"
+                      name="apellidos"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombres]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombres]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombres]"
+                      name="nombres"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[sexo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[sexo]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[sexo]"
+                      name="sexo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[numero_telefono]"
+                      length="8"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]"
+                      name="numero_telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[estado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[estado]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[estado]"
+                      name="estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre_tipo]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]"
+                      name="nombre_tipo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[idcliente]"
+                      dataType="i4"
+                      name="idcliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[monto_facturacion]"
+                      dataType="numeric"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[idtipocliente]"
+                      dataType="i4"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[codigo_cliente]"
+                      dataType="wstr"
+                      length="15"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[dui]"
+                      dataType="wstr"
+                      length="9"
+                      name="dui" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nit]"
+                      dataType="wstr"
+                      length="14"
+                      name="nit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[apellidos]"
+                      dataType="wstr"
+                      length="250"
+                      name="apellidos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombres]"
+                      dataType="wstr"
+                      length="250"
+                      name="nombres" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="1"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[numero_telefono]"
+                      dataType="wstr"
+                      length="8"
+                      name="numero_telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="1"
+                      name="estado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre_tipo]"
+                      dataType="wstr"
+                      length="100"
+                      name="nombre_tipo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[idcliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[idcliente]"
+                      name="idcliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[codigo_cliente]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[dui]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[dui]"
+                      name="dui" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nit]"
+                      dataType="wstr"
+                      length="14"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nit]"
+                      name="nit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[apellidos]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[apellidos]"
+                      name="apellidos" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombres]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombres]"
+                      name="nombres" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[sexo]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[sexo]"
+                      name="sexo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[numero_telefono]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[numero_telefono]"
+                      name="numero_telefono" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[estado]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[estado]"
+                      name="estado" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombre_tipo]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Origen de ADO NET 1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen de ADO NET 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select a.apellidos, a.codigo_cliente, a.dui, a.estado, a.nit, a.nombres, a.numero_telefono, a.sexo, b.monto_facturacion, c.nombre_tipo from facturacion b 
+LEFT JOIN cliente a on b.idcliente = a.idcliente
+LEFT JOIN tipo_clientes c on a.idtipocliente = c.idtipocliente;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Origen de ADO NET 1.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.db_roaming_costarica.root]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.db_roaming_costarica.root]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[apellidos]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[apellidos]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[apellidos]"
+                      name="apellidos"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[codigo_cliente]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]"
+                      name="codigo_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[dui]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[dui]"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[dui]"
+                      name="dui"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[estado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[estado]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[estado]"
+                      name="estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nit]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nit]"
+                      length="14"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nit]"
+                      name="nit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombres]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nombres]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombres]"
+                      name="nombres"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[numero_telefono]"
+                      length="8"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]"
+                      name="numero_telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[sexo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[sexo]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[sexo]"
+                      name="sexo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre_tipo]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]"
+                      name="nombre_tipo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[apellidos]"
+                      dataType="wstr"
+                      length="250"
+                      name="apellidos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[codigo_cliente]"
+                      dataType="wstr"
+                      length="15"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[dui]"
+                      dataType="wstr"
+                      length="9"
+                      name="dui" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="1"
+                      name="estado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nit]"
+                      dataType="wstr"
+                      length="14"
+                      name="nit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nombres]"
+                      dataType="wstr"
+                      length="250"
+                      name="nombres" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[numero_telefono]"
+                      dataType="wstr"
+                      length="8"
+                      name="numero_telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="1"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[monto_facturacion]"
+                      dataType="numeric"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre_tipo]"
+                      dataType="wstr"
+                      length="100"
+                      name="nombre_tipo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[apellidos]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[apellidos]"
+                      name="apellidos" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[codigo_cliente]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[dui]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[dui]"
+                      name="dui" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[estado]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[estado]"
+                      name="estado" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nit]"
+                      dataType="wstr"
+                      length="14"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nit]"
+                      name="nit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nombres]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nombres]"
+                      name="nombres" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[numero_telefono]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[numero_telefono]"
+                      name="numero_telefono" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[sexo]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[sexo]"
+                      name="sexo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nombre_tipo]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Preferencial y Ejecutivo"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Preferencial y Ejecutivo"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Preferencial_y_Ejecutivo</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Preferencial y Ejecutivo.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[monto_facturacion]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[idtipocliente]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[codigo_cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[codigo_cliente]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[dui]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="dui"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[dui]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[nit]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="nit"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nit]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[apellidos]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="apellidos"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[apellidos]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[nombres]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="nombres"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nombres]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[sexo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="sexo"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[sexo]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[numero_telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="numero_telefono"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[numero_telefono]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[estado]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="estado"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[estado]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[nombre_tipo]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nombre_tipo]"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].Columns[codigo_pais]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="codigo_pais"
+                      externalMetadataColumnId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[codigo_pais]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[codigo_pais]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[id]"
+                      dataType="wstr"
+                      length="255"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[monto_facturacion]"
+                      dataType="wstr"
+                      length="255"
+                      name="monto_facturacion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[idtipocliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="idtipocliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[codigo_cliente]"
+                      dataType="wstr"
+                      length="255"
+                      name="codigo_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[dui]"
+                      dataType="wstr"
+                      length="255"
+                      name="dui" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nit]"
+                      dataType="wstr"
+                      length="255"
+                      name="nit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[apellidos]"
+                      dataType="wstr"
+                      length="255"
+                      name="apellidos" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nombres]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombres" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="255"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[numero_telefono]"
+                      dataType="wstr"
+                      length="255"
+                      name="numero_telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[estado]"
+                      dataType="wstr"
+                      length="255"
+                      name="estado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[nombre_tipo]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre_tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input].ExternalColumns[codigo_pais]"
+                      dataType="wstr"
+                      length="255"
+                      name="codigo_pais" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Preferencial y Ejecutivo.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Preferencial y Ejecutivo.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Preferencial y Ejecutivo.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Preferencial y Ejecutivo.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[idtipocliente]"
+                      cachedDataType="i4"
+                      cachedName="idtipocliente"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[idtipocliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[codigo_cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[dui]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="dui"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[dui]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[nit]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="nit"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nit]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[apellidos]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="apellidos"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[apellidos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[nombres]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="nombres"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombres]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[sexo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="sexo"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[sexo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[numero_telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="numero_telefono"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[estado]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="estado"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[estado]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 1].Columns[nombre_tipo]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[apellidos]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="apellidos"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[apellidos]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[codigo_cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="15"
+                      cachedName="codigo_cliente"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[codigo_cliente]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[dui]"
+                      cachedDataType="wstr"
+                      cachedLength="9"
+                      cachedName="dui"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[dui]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[estado]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="estado"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[estado]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[nit]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="nit"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nit]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[nombres]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="nombres"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombres]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[numero_telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="numero_telefono"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[numero_telefono]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[sexo]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="sexo"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[sexo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[monto_facturacion]"
+                      cachedDataType="numeric"
+                      cachedName="monto_facturacion"
+                      cachedPrecision="10"
+                      cachedScale="2"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[monto_facturacion]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Union All.Inputs[Union All Input 2].Columns[nombre_tipo]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="nombre_tipo"
+                      lineageId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET].Columns[nombre_tipo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]"
+                      dataType="numeric"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]"
+                      name="monto_facturacion"
+                      precision="10"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[idtipocliente]"
+                      name="idtipocliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
+                      dataType="wstr"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
+                      name="codigo_cliente" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]"
+                      dataType="wstr"
+                      length="9"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[dui]"
+                      name="dui" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]"
+                      dataType="wstr"
+                      length="14"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nit]"
+                      name="nit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[apellidos]"
+                      name="apellidos" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombres]"
+                      name="nombres" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[sexo]"
+                      name="sexo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]"
+                      dataType="wstr"
+                      length="8"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[numero_telefono]"
+                      name="numero_telefono" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]"
+                      dataType="wstr"
+                      length="1"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[estado]"
+                      name="estado" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Union All.Outputs[Union All Output 1].Columns[nombre_tipo]"
+                      name="nombre_tipo" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Gobierno y Turista]"
+              endId="Package\Data Flow Task\Gobierno y Turista.Inputs[Excel Destination Input]"
+              name="Gobierno y Turista"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Gobierno y Turista]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Preferencial y Ejecutivo]"
+              endId="Package\Data Flow Task\Preferencial y Ejecutivo.Inputs[Excel Destination Input]"
+              name="Preferencial y Ejecutivo"
+              startId="Package\Data Flow Task\Conditional Split.Outputs[Preferencial y Ejecutivo]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Data Flow Task\Origen de ADO NET.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Salida de origen de ADO NET1]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 2]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Data Flow Task\Origen de ADO NET 1.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Union All Output 1]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Data Flow Task\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -52,5 +1901,279 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Data Flow Task\Origen de ADO NET"
+          TopLeft="294.071429185721,57.49999995442" />
+        <NodeLayout
+          Size="180.8,41.6"
+          Id="Package\Data Flow Task\Origen de ADO NET 1"
+          TopLeft="538.357143927594,59.2058823321621" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Data Flow Task\Union All"
+          TopLeft="430.000000915357,156.764705744943" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET]"
+          TopLeft="380.071429185721,99.09999995442">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="109.928571729636,57.6647057905226"
+              Start="0,0"
+              End="109.928571729636,50.1647057905226">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.8323528952613" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.8323528952613"
+                    Point2="0,28.8323528952613"
+                    Point3="4,28.8323528952613" />
+                  <mssgle:LineSegment
+                    End="105.928571729636,28.8323528952613" />
+                  <mssgle:CubicBezierSegment
+                    Point1="105.928571729636,28.8323528952613"
+                    Point2="109.928571729636,28.8323528952613"
+                    Point3="109.928571729636,32.8323528952613" />
+                  <mssgle:LineSegment
+                    End="109.928571729636,50.1647057905226" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salida de origen de ADO NET1]"
+          TopLeft="628.757143927594,100.805882332162">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-120.09047634557,55.9588234127805"
+              Start="0,0"
+              End="-120.09047634557,48.4588234127805">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.1335138628305" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.1335138628305"
+                    Point2="0,33.1335138628305"
+                    Point3="-4,33.1335138628305" />
+                  <mssgle:LineSegment
+                    End="-116.09047634557,33.1335138628305" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-116.09047634557,33.1335138628305"
+                    Point2="-120.09047634557,33.1335138628305"
+                    Point3="-120.09047634557,37.1335138628305" />
+                  <mssgle:LineSegment
+                    End="-120.09047634557,48.4588234127805" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188,41.6"
+          Id="Package\Data Flow Task\Preferencial y Ejecutivo"
+          TopLeft="252.857143395409,459.917646677426" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="425.71428662052,226.329411626625" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Union All Output 1]"
+          TopLeft="490.000000915357,198.364705744943">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12.1142857051624,27.9647058816826"
+              Start="0,0"
+              End="12.1142857051624,20.4647058816826">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.9823529408413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.9823529408413"
+                    Point2="0,13.9823529408413"
+                    Point3="4,13.9823529408413" />
+                  <mssgle:LineSegment
+                    End="8.11428570516239,13.9823529408413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.11428570516239,13.9823529408413"
+                    Point2="12.1142857051624,13.9823529408413"
+                    Point3="12.1142857051624,17.9823529408413" />
+                  <mssgle:LineSegment
+                    End="12.1142857051624,20.4647058816826" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Data Flow Task\Gobierno y Turista"
+          TopLeft="573.571429792412,460.905882127052" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="427.857143767938,319.364705824708" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="503.585715194229,267.929411626625">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.4352941980824"
+              Start="0,0"
+              End="0,43.9352941980824">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.9352941980824" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Gobierno y Turista]"
+          TopLeft="529.457143767938,360.964705824708">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="126.914286024473,99.9411763023443"
+              Start="0,0"
+              End="126.914286024473,92.4411763023443">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5914931443368" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.5914931443368"
+                    Point2="0,40.5914931443368"
+                    Point3="4,40.5914931443368" />
+                  <mssgle:LineSegment
+                    End="122.914286024473,40.5914931443368" />
+                  <mssgle:CubicBezierSegment
+                    Point1="122.914286024473,40.5914931443368"
+                    Point2="126.914286024473,40.5914931443368"
+                    Point3="126.914286024473,44.5914931443368" />
+                  <mssgle:LineSegment
+                    End="126.914286024473,92.4411763023443" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="22.2362641059867,45.5914931443368,82.4417578125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Preferencial y Ejecutivo]"
+          TopLeft="480.657143767938,360.964705824708">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-133.800000372529,98.9529408527181"
+              Start="0,0"
+              End="-133.800000372529,91.4529408527181">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.1901175155655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.1901175155655"
+                    Point2="0,40.1901175155655"
+                    Point3="-4,40.1901175155655" />
+                  <mssgle:LineSegment
+                    End="-129.800000372529,40.1901175155655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-129.800000372529,40.1901175155655"
+                    Point2="-133.800000372529,40.1901175155655"
+                    Point3="-133.800000372529,44.1901175155655" />
+                  <mssgle:LineSegment
+                    End="-133.800000372529,91.4529408527181" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-118.817031436265,45.1901175155655,103.8340625,11.7119140625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Origen de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Origen de ADO NET 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Preferencial y Ejecutivo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Gobierno y Turista">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
